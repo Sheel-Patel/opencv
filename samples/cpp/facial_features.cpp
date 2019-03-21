@@ -3,7 +3,6 @@
  *
  * A program to detect facial feature points using
  * Haarcascade classifiers for face, eyes, nose and mouth
- *
  */
 
 #include "opencv2/objdetect.hpp"
@@ -66,15 +65,15 @@ int main(int argc, char** argv)
 static void help()
 {
     cout << "\nThis file demonstrates facial feature points detection using Haarcascade classifiers.\n"
-        "The program detects a face and eyes, nose and mouth inside the face."
+        "The program detects a face and the eyes, nose, and mouth inside the face."
         "The code has been tested on the Japanese Female Facial Expression (JAFFE) database and found"
-        "to give reasonably accurate results. \n";
+        "to give reasonably accurate results.\n";
 
     cout << "\nUSAGE: ./cpp-example-facial_features [IMAGE] [FACE_CASCADE] [OPTIONS]\n"
         "IMAGE\n\tPath to the image of a face taken as input.\n"
         "FACE_CASCSDE\n\t Path to a haarcascade classifier for face detection.\n"
-        "OPTIONS: \nThere are 3 options available which are described in detail. There must be a "
-        "space between the option and it's argument (All three options accept arguments).\n"
+        "OPTIONS:\nThere are 3 options available which are described in detail. There must be a "
+        "space between the option and its argument (All three options accept arguments).\n"
         "\t-eyes=<eyes_cascade> : Specify the haarcascade classifier for eye detection.\n"
         "\t-nose=<nose_cascade> : Specify the haarcascade classifier for nose detection.\n"
         "\t-mouth=<mouth-cascade> : Specify the haarcascade classifier for mouth detection.\n";
